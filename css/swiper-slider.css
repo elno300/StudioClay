@@ -1,0 +1,124 @@
+.swiper {
+    width: 90vw;
+    height: fit-content;
+    margin: 0;
+    background-color: #F6CDFA;
+    justify-content: center;
+  
+}
+
+.swiper-slide {
+    /* font-size: 18px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    /* align-items: flex-start; */
+    text-align: start;
+    background-color: #F6CDFA;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+.swiper-slide .book-button{
+    background-color:#ffffffa6;
+    color: #122151;
+    /* #eeebd0a6 */
+    width: fit-content;
+    padding: 4px 10px;
+    border: none;
+    cursor: pointer;
+    text-align:end;
+    border-radius: 15px;
+    /* margin-left: 5vw; */
+}
+
+.swiper-slide .book-button:hover{
+    background-color: #ffffff;
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color:#ffffffa6;
+    top: 38%;
+}
+
+.swiper-button-prev:hover {
+   color:#EEEBD0 ;
+}
+.swiper-button-next:hover{
+    color:#EEEBD0 ;
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
+.swiper-pagination{
+    display: none;
+}
+
+.swiper-slide p{
+    padding:0;
+}
+
+.swiper {
+    left: 5vw;
+}
+.swiper-slide .book-button{
+    margin-left: 0vw;
+
+}
+
+/* @media only screen and( min-width: 768px) {
+
+    .swiper {
+        align-content: center;
+        justify-content: center;
+        left: 0px;
+        right: 5vw;
+    } */
+    /* .swiper-slide p{
+
+        padding:0;
+        background-color: antiquewhite;
+
+    } */
+
+    /* .swiper-button-prev, .swiper-button-next {
+        top: 33%;
+    }
+
+    .swiper-slide .book-button{
+        margin-left: 0vw;
+          .swiper {
+        left: 5vw;
+    } */
+
+
+/* } */
+
+/* @media only screen and (min-width: 800px){
+    .swiper-slide p{
+        padding:0;
+        background-color: antiquewhite;
+    } */
+
+    /* .swiper-button-prev, .swiper-button-next {
+        /* top: 33%; */
+    /* } */
+
+    /* .swiper-slide .book-button{
+        margin-left: 0vw;
+
+    }
+
+    .swiper {
+        left: 5vw;
+    } */
+/* } */
+
+/* @media only screen and (max-width: 500px){
+} */

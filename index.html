@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Clay, a ceramic studio - Buy courses and ceramics</title>
+    <meta
+      name="description"
+      content="Studio Clay is a ceramic studio that offers various courses in
+      clay and pottery. They also have a store where they sell their own
+      designed stoneware."
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!-- Link for swiper slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- link with styling for the swiper-slider-->
+    <link rel="stylesheet" href="css/swiper-slider.css" />
+  </head>
+  <body>
+    <header>
+
+      <nav class="top-navigation">
+        <!-- <div class="SpaceNavTop"></div> -->
+        <div
+          class="hamburger-container"
+          id="hamburger-button"
+          onclick="hamburgerToCross(this)"
+        >
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <h1 id="logo" onclick="reload()">STUDIO CLAY</h1>
+        <ul>
+          <li><a href="#about-us">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="#boutique">BOUTIQUE</a></li>
+        </ul>
+      </nav>
+      <nav class="hamburger-menu" id="hamburger-menu">
+        <ul>
+          <li>
+            <!-- Below on the links the hamburgerToCross function is added so that the hamburger menu/window slides back and closes when one of the links in the list is clicked on. -->
+            <a
+              id="courses-menu"
+              href="courses.html"
+              onclick="hamburgerToCross(this)"
+              >COURSES</a
+            >
+          </li>
+          <li>
+            <a
+              class="about-menu"
+              href="#about-us"
+              onclick="hamburgerToCross(this)"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              class="top-courses"
+              href="#courses"
+              onclick="hamburgerToCross(this)"
+              >TOP COURSES</a
+            >
+          </li>
+          <li>
+            <a
+              class="boutique-menu"
+              href="#boutique.html"
+              onclick="hamburgerToCross(this)"
+              >BOUTIQUE</a
+            >
+          </li>
+          <li>
+            <a
+              class="location-menu"
+              href="#location"
+              onclick="hamburgerToCross(this)"
+              >LOCATION</a
+            >
+          </li>
+          <li>
+            <a
+              class="contact-menu"
+              href="#contact"
+              onclick="hamburgerToCross(this)"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="introduction">
+        <section id="intro-text">
+          <h2>CERAMICS <span>STUDIO</span> <span>AND</span> BOUTIQUE</h2>
+          <p>
+            A fictive pottery studio in Gothenburg that offers courses in wheel
+            throwing, hand building and sculpting...
+          </p>
+        </section>
+      </div>
+    </header>
+    <main>
+      <section id="about-us">
+        <section id="about-text">
+          <h2>ABOUT US</h2>
+          <p class="main-text">
+            Studio Clay was founded by two artist colleagues with diverse design
+            backgrounds, but a shared passion for clay. It all began as a course
+            within a study circle in 2019 and quickly evolved into a wide range
+            of courses.
+          </p>
+          <p class="main-text">
+            Our studio is more than just a place to create art; it's a community
+            of like-minded individuals who share a passion for ceramics. Join us
+            for regular courses, collaborations, and opportunities. Join one of
+            our courses and fill free to contact us.
+          </p>
+        </section>
+        <section id="about-img-container">
+          <img
+            class="aboutUs-img"
+            src="./media-ceramics/two-pottery-makers_mobile.jpg"
+            alt="Two people doing pottery"
+          />
+        </section>
+      </section>
+      <section id="courses">
+        <h2>TOP COURSES</h2>
+        <p class="main-text">
+          Whether you're looking to unlock your artistic potential, expand your
+          skills, or simply indulge in the joy of working with clay, Studio Clay
+          is here to support your journey.
+        </p>
+        <p class="main-text">
+          From turning to hand building, glazing, and sculpting, there's a
+          course for everyone. Dive into the details on our
+          <a class="underscore" href="courses.html">courses</a>
+          page.
+        </p>
+        <!-- Here comes the swiper slider in, found on
+          https://swiperjs.com/get-started#swiper-css-stylessize -->
+
+        <!-- Slider main container -->
+        <section class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div id="swipe1" class="swiper-slide">
+              <a href="courses.html" class="book-button">Book now</a>
+              <p>
+                <strong>Basic Ceramics Course:</strong> An introduction to
+                ceramics where you learn the fundamentals such as handbuilding,
+                wheel throwing, and glazing.
+              </p>
+              <img
+                src="media-ceramics/1.3Wheel-throwing_.jpg"
+                alt="wheel throwing"
+              />
+            </div>
+            <div id="swipe2" class="swiper-slide">
+              <a href="courses.html" class="book-button">Book now</a>
+              <p>
+                <strong>Sculpture Course:</strong>
+                Unleash your creativity in our sculpture course. Shape clay into
+                unique sculptures with hands-on techniques guided by experts.
+              </p>
+
+              <img
+                src="media-ceramics/3.2sculpting-big_640.jpg"
+                alt="sculpture in clay"
+              />
+            </div>
+            <div id="swipe3" class="swiper-slide">
+              <a href="courses.html" class="book-button">Book now</a>
+              <p>
+                <strong>Glazing Course: </strong>
+                Focuses on mixing and applying glazes to provide ceramic objects
+                with various colors and surface effects.
+              </p>
+              <img src="media-ceramics/5.Glazing_640.jpg" alt="sculpting" />
+            </div>
+            <div id="swipe4" class="swiper-slide">
+              <a href="courses.html" class="book-button">Book now</a>
+              <p>
+                <strong>Handbuilding Course:</strong> Focuses on creating
+                ceramic objects using handbuilding techniques such as coiling,
+                pinching, and slab building.
+              </p>
+              <img
+                src="media-ceramics/3.Sculpting&handbuilding_640.jpg"
+                alt="sculpting"
+              />
+            </div>
+            <div id="swipe5" class="swiper-slide">
+              <a href="courses.html" class="book-button">Book now</a>
+              <p>
+                <strong>Advanced Ceramic:</strong> An advanced course for those
+                with previous experience, exploring complex techniques such as
+                multi-part pottery and larger projects.
+              </p>
+              <img
+                src="media-ceramics/1.4Wheel-throwing_.jpg"
+                alt="Wheel-throwing"
+              />
+            </div>
+            <div id="swipe6" class="swiper-slide">
+              <a href="courses.html" class="book-button">Book now</a>
+              <p>
+                <strong>Own Project:</strong>
+                Choose your own projects and work independently in the studio.
+                You lead your own project, and our staff is available on-site
+                for guidance and support.
+              </p>
+              <img src="media-ceramics/6.OwnProject.jpg" alt="Forms in clay" />
+            </div>
+          </div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </section>
+      </section>
+      <div id="find-us">
+        <h2>FIND US</h2>
+        <div id="group-loc-content">
+          <section id="location-text">
+            <h3 id="location">Location</h3>
+            <p class="main-text">
+              The studio is located in the city center of Gothenburg. It's
+              situated in the Lorensberg district. You can easily travel here by
+              bus or tram. The nearest tram stops are Valand and Lorensberg
+              station.
+            </p>
+            <address class="main-text">
+              <!-- Nedan används br som ett undantag,
+                jag är medveten om att det inte är att föredra :) -->
+              <p>
+                <strong>Studio Clay</strong><br />
+                Lorensbergsgatan 6,<br />
+                411 36 Göteborg<br />
+              </p>
+            </address>
+          </section>
+          <aside id="map-container">
+            <a
+              href="https://www.google.com/maps/place/Lorensbergsgatan+6,+411+36+G%C3%B6teborg/@57.700448,11.9754461,16z/data=!4m6!3m5!1s0x464ff370f514a08b:0x7d6c92fb54c34259!8m2!3d57.7004834!4d11.9764502!16s%2Fg%2F11cpgf5j82?entry=ttu"
+            >
+              <picture>
+                <source
+                  media="(min-width: 980px)"
+                  srcset="media-ceramics/location-map-1600px.png"
+                />
+                <source
+                  media="(min-width: 500px)"
+                  srcset="media-ceramics/location-map-1200px.png"
+                />
+                <source
+                  media="(min-width: 300px)"
+                  srcset="media-ceramics/location-map-1000px.png"
+                />
+                <img
+                  src="media-ceramics/location-map-1800px.png"
+                  alt="Map of the location"
+                />
+              </picture>
+            </a>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section id="footer-summery">
+        <section id="Short-about">
+          <h3>About Us</h3>
+          <p>
+            At Studio Clay, we're passionate about the art of ceramics. Our
+            studio is a vibrant hub where creativity, craftsmanship, and
+            community come together. Whether you're a seasoned ceramic artist or
+            a curious beginner, there's a place for you here.
+          </p>
+        </section>
+        <section id="contact-text">
+          <h3 id="contact">Contact</h3>
+          <p>
+            Contact us to learn more about our upcoming classes, studio hours,
+            and events. We can't wait to welcome you into our creative family.
+          </p>
+          <p>
+            E-mail:
+            <a class="underscore" href="mailto:info@studioclay.se"
+              >info@studioclay.com</a
+            ><br />
+            Phone: +46 31-368 34 50
+          </p>
+        </section>
+
+        <section>
+          <h3>Address</h3>
+          <p>
+            The studio is located in the city center of Gothenburg. It's
+            situated in the Lorensberg district. You can easily travel here by
+            bus or tram. The nearest tram stops are Valand and Lorensberg
+            station.
+          </p>
+          <p>
+            <strong>Studio Clay</strong><br />
+            Lorensbergsgatan 6,<br />
+            411 36 Göteborg<br />
+          </p>
+        </section>
+      </section>
+      <section id="copyrights">
+        <p>Copyright © Studio Clay AB. All Rights Reserved.</p>
+      </section>
+    </footer>
+    <!-- Swiper-slider javaScript link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- This projects own JavaScript document -->
+    <script src="javaScript/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Clay, a ceramic studio - Buy courses and ceramics</title>
+    <meta
+      name="description"
+      content="Studio Clay is a ceramic studio that offers various courses in
+      clay and pottery. They also have a store where they sell their own
+      designed stoneware."
+    />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="top-navigation">
+        <div
+          class="hamburger-container"
+          id="hamburger-button"
+          onclick="hamburgerToCross(this)"
+        >
+          <div class="line1"></div>
+          <div class="line2"></div>
+        </div>
+        <h1 id="logo">STUDIO CLAY</h1>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#about-us">ABOUT</a></li>
+          <li><a href="#boutique">BOUTIQUE</a></li>
+        </ul>
+      </nav>
+      <nav class="hamburger-menu" id="hamburger-menu">
+        <ul>
+          <li>
+            <!-- Below on the links the hamburgerToCross function is added so that the hamburger menu/window slides back and closes when one of the links in the list is clicked on. -->
+            <a
+              id="courses-menu"
+              href="index.html"
+              onclick="hamburgerToCross(this)"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              class="about-menu"
+              href="index.html#about-us"
+              onclick="hamburgerToCross(this)"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              class="top-courses"
+              href="index.html#courses"
+              onclick="hamburgerToCross(this)"
+              >TOP COURSES</a
+            >
+          </li>
+          <li>
+            <a
+              class="boutique-menu"
+              href="#boutique.html"
+              onclick="hamburgerToCross(this)"
+              >BOUTIQUE</a
+            >
+          </li>
+          <li>
+            <a
+              class="location-menu"
+              href="index.html#location"
+              onclick="hamburgerToCross(this)"
+              >LOCATION</a
+            >
+          </li>
+          <li>
+            <a
+              class="contact-menu"
+              href="index.html#contact"
+              onclick="hamburgerToCross(this)"
+              >CONTACT</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="courses-page">
+      <h2>OUR COURSES</h2>
+      <p class="main-text">
+        <strong> This page is under construction... </strong>
+      </p>
+    </section>
+    <footer>
+      <section id="footer-summery">
+        <section id="Short-about">
+          <h3>About Us</h3>
+          <p>
+            At Studio Clay, we're passionate about the art of ceramics. Our
+            studio is a vibrant hub where creativity, craftsmanship, and
+            community come together. Whether you're a seasoned ceramic artist or
+            a curious beginner, there's a place for you here.
+          </p>
+        </section>
+        <section id="contact-text">
+          <h3 id="contact">Contact</h3>
+          <p>
+            Contact us to learn more about our upcoming classes, studio hours,
+            and events. We can't wait to welcome you into our creative family.
+            <a class="underscore" href="mailto:info@studioclay.se"
+              >info@studioclay.com</a
+            ><br />
+            Phone: +46 31-368 34 50
+          </p>
+        </section>
+
+        <section>
+          <h3>Address</h3>
+          <p>
+            <strong>Studio Clay</strong><br />
+            Lorensbergsgatan 6,<br />
+            411 36 Göteborg<br />
+          </p>
+        </section>
+      </section>
+      <section id="copyrights">
+        <p>Copyright © Studio Clay AB. All Rights Reserved.</p>
+      </section>
+    </footer>
+    <script src="javaScript/script.js"></script>
+  </body>
+</html>

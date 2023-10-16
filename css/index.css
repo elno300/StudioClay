@@ -1,0 +1,661 @@
+body {
+    margin: auto;
+}
+
+/* Type-selector(s) */
+/* Selection of different headings, p-element and link element*/
+h1,
+h2,
+h3,
+p,
+a,
+.book-button {
+    color: #122151;
+    font-family: Josefin, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+h2 {
+    /* Takes away gap between ex. intro. & about-us*/
+    margin-top: 0px;
+    font-size: 3.25rem;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+h3{
+    font-size: 2.25rem;
+    padding-top: 2rem;
+    /* margin: 00; */
+}
+
+p {
+    padding: 00 5vw;
+}
+
+nav{
+    position: fixed;
+    width: 100vw;
+}
+
+/* class selector */
+.top-navigation {
+    background-color: #E86252;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    z-index: 2;
+    /* display: none; */
+    /* position: fixed; */
+}
+
+/* .SpaceNavTop{
+    background-color: aqua;
+    height: 10vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+} */
+
+/* LOGO -> CLAY STUDIO */
+.top-navigation h1 {
+    font-size: 1.5rem;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 00 5vw;
+    padding-top: 1.5%;
+    display: inline-block;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+/* List */
+.top-navigation ul {
+    margin-left: 5vw;
+    display: none;
+    /*Undisplays/hides the links in nav-bar */
+    list-style-type: none;
+}
+
+/* hamburger-button/container - class selector */
+.hamburger-container {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5vw;
+    order: 1;
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.line1, .line2{
+    width: 32px;
+    height: 2px;
+    background-color: #122151;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+/* The lines inside of the hamburger  */
+.rotate .line1{
+    transform: translate(0, 6px) rotate(-45deg);
+}
+
+.rotate .line2 {
+    transform: translate(0, -6px) rotate(45deg);
+}
+
+/* The menu that slides out when clicking the hamburger */
+.hamburger-menu {
+    background-color: #EEEBD0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    margin-right: -100vw;
+    display: none;
+}
+
+/* Animation that makes the hamburger-menu come in from right to left*/
+@keyframes slide-right {
+    from {
+        margin-right: -100vw;
+        opacity: 50%;
+    }
+
+    to {
+        margin-right: 0vw;
+        opacity: 100%;
+    }
+}
+
+/* Animation that makes the hamburger-menu go back to the right and disappear*/
+@keyframes slide-back {
+    from {
+        margin-right: 0vw;
+    }
+
+    to {
+        margin-right: -100vw;
+        display: none;
+    }
+}
+
+.hamburger-menu ul {
+     display: flex;
+     flex-direction: column;
+     row-gap: 3vh;
+     padding: 0;
+    background-color: #E86252;
+     /* margin: 0; */
+}
+
+.hamburger-menu li {
+    list-style-type: none;
+}
+
+#hamburger-menu li>a {
+    font-size: 46px;
+}
+
+
+
+
+/* ========================================================== */
+/* =======================First section====================== */
+/* =======================Introduction======================= */
+/* ========================================================== */
+
+/* Id-selector */
+#introduction {
+    background-image: url(../media-ceramics/hand-building_in_action_light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100svh;/*90*/
+    /* margin-top: 10vw; */
+    display: flex;
+    justify-content: center;
+    /*Places text vertically in the center of page*/
+    flex-direction: column;
+}
+
+#introduction h2 {
+    font-size: 3.25rem;
+    margin: 00 5vw;
+    text-align: start;
+}
+
+#introduction p {
+    margin: 0;
+    font-size: 1.25rem;
+    margin-bottom: 16vh;
+}
+
+/* Works as a container */
+#intro-text{
+    width: 70%;
+}
+
+
+
+
+/* ========================================================== */
+/* ======================== ABOUT US ======================== */
+/* ========================================================== */
+
+#about-us {
+    background-color: #EEEBD0;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Adjacent sibling combinator */
+/*Takes ovay outfilling text*/
+#about-text p+p {
+    display: none;
+}
+
+#about-us h2 {
+    margin-bottom: 0;
+}
+
+.aboutUs-img {
+    width: 90vw;
+    max-width: 400px; /*630px*/
+    align-content: flex-end;
+    margin-bottom: 5vw;
+}
+
+
+
+/* ========================================================== */
+/* ======================== COURSES ========================= */
+/* ========================================================== */
+
+#courses {
+    background-color: #F6CDFA;
+    min-height: min-content;
+    overflow: hidden;
+}
+
+#courses h2 {
+    padding-top: 10vh;
+    margin-bottom: 0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vw;
+}
+
+#courses .main-text{
+
+    display: none;
+}
+
+
+
+/* ========================================================== */
+/* ======================== FIND US ========================= */
+/* ========================================================== */
+
+#find-us {
+    background-color: #EEEBD0;
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#find-us h2{
+    margin-bottom: 0;
+    margin: 00 5vw;
+}
+
+#find-us h3{
+    margin: 00 5vw;
+}
+
+#find-us p {
+    padding: 0px;
+    padding-bottom: 5vw;
+    margin: 00 5vw;
+}
+
+#map-container{
+    height: 90vw;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-bottom: 5vw;
+    /* max-width: 400px; */
+    /* max-height: 400px; */
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+    display: inline-block;
+    align-content: flex-end;
+}
+
+#map-container picture{
+    filter: grayscale(0.8);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .2s;
+}
+
+#map-container img:hover{
+    transform: scale(1.5);
+}
+
+
+
+
+/* ========================================================== */
+/* ======================== FOOTER ========================== */
+/* ========================================================== */
+
+footer{
+    background-color: #E86252;
+    height: 100%;
+    margin: 0;
+    padding: 10vh 10vw;
+}
+
+#footer-summery p{
+    padding: 0
+}
+
+#copyrights{
+    padding-top: 5vh;
+    text-align: center;
+   }
+
+
+
+/* ========================================================== */
+/* ===================== courses page ======================= */
+/* ========================================================== */
+
+#courses-page{
+    background-color: #F6CDFA;
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+
+/* ========================================================== */
+/* ========================= FONTS ========================== */
+/* ========================================================== */
+
+/*Font*/
+@font-face {
+    font-family: Josefin;
+    src: url(../Josefin_Sans/static/JosefinSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+/*Font*/
+@font-face {
+    font-family: Josefin;
+    src: url(../Josefin_Sans/static/JosefinSans-Bold.ttf);
+    font-weight: 500;
+    font-style:normal;
+}
+
+
+
+
+/* ========================================================== */
+/* ====================== MEDIA QUERIE ====================== */
+/* ========================================================== */
+
+@media screen and (min-width: 400px){
+
+
+    #find-us{
+        overflow: hidden;
+    }
+
+    #map-container{
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    }
+}
+
+/* iPad */
+@media screen and (min-width: 768px) and (max-width: 980px){
+
+   #intro-text h2{
+        font-size: 67px;
+   }
+
+    #hamburger-menu li>a {
+        font-size: 56px;
+    }
+
+    .aboutUs-img{
+        margin-bottom: 10vw;
+    }
+
+    #about-text {
+        max-width: 700px;
+    }
+
+   .main-text, footer p{
+        max-width: 700px
+    }
+
+    #courses{
+        min-height: min-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+
+    #courses .main-text{
+        align-self: center;
+    }
+
+}
+
+
+@media only screen and (min-width: 980px) {
+
+    p{
+        font-size: small;
+    }
+
+
+
+
+    /* ========================================================== */
+    /* ==================== Media Query Top nav ================= */
+    /* =============== Re-arrange navbar adding links============ */
+    /* ===========================980px========================== */
+
+    /* class selector */
+    .top-navigation {
+        height: 12vh;
+    }
+
+    /* List */
+    .top-navigation ul {
+        order: 0;
+        /*Puts the item to the left = first in row. */
+        display: inline-block;
+        /*Makes the list with links horisontal*/
+        padding-left: 0;
+        font-size: 0.75rem;
+    }
+
+    /* LOGO -> CLAY STUDIO */
+    .top-navigation h1 {
+        order: 1;
+        font-size: 2.3rem;
+        flex-grow: 1;
+        text-align: center;
+        padding-top: 1%;
+    }
+
+    /* Hamburger icon / hamburger-menu-button */
+    .hamburger-container {
+        order: 2;
+    }
+
+    /* The menu that slides out when clicking the hamburger */
+    .hamburger-menu {
+        width: fit-content;
+        padding: 00 10vw;
+    }
+
+    #hamburger-menu ul a:hover{
+        border-bottom: 2px solid #E86252;
+    }
+
+    #intro-text h2{
+        font-size: 70px;
+   }
+
+    /* ========================================================== */
+    /* ========================= About ========================== */
+    /* ===========================980px========================== */
+
+    /* section */
+
+    #about-us {
+        flex-direction: row;
+        padding: 5vw;
+        height: fit-content;
+        align-items:normal;
+    }
+
+    #about-us h2 {
+        /*earlier it was in center*/
+        text-align: start;
+    }
+
+    #about-us p {
+        /* background-color: #ab827e; */
+        padding: 00 0vw;
+        justify-items: center;
+        /* font-size: large; */
+    }
+
+    #about-text p+p {
+        display: block;
+    }
+
+    #about-img-container {
+        display: inline-block;
+    }
+
+    /* image */
+    .aboutUs-img {
+        border-radius: 50%;
+        width: 47.5vw;
+        margin-left: 16px;
+        margin-bottom: 0;
+    }
+
+    #about-text {
+        /* font-size: 0.75rem; */
+        width: 47.5%;
+    }
+
+           /* ========================================================== */
+    /* ==================== courses section ===================== */
+    /* ========================min w-980px======================= */
+
+
+    #courses{
+        /* height: 95vh; */
+        min-height: min-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    #courses .main-text{
+        align-self: center;
+        max-width: 700px;
+    }
+
+    #courses>p{
+        max-width: 70%;
+    }
+
+
+
+    /* ========================================================== */
+    /* ======================== FIND US ========================= */
+    /* ===========================980px========================== */
+
+    #group-loc-content{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10vh;
+    }
+
+    #location-text{
+        width: 50vw;
+    }
+
+    #map-container{
+        border-radius: 50%;
+        /* max-width: 300px;
+        max-height: 300px; */
+        /* width: 379px;
+        height: 379px; */
+        padding-bottom: 0vh;
+        padding-left: 0vw;
+    }
+
+    /* #location-text address{
+        font-size: 50px;
+    } */
+
+    /* #map-container{
+        width: auto;
+        height: 45vw;
+        margin: 20px;
+        align-self: center;
+        justify-self: center;
+    } */
+
+
+
+
+
+    /* ========================================================== */
+    /* ======================== FOOTER  ========================= */
+    /* ==========================980px=========================== */
+
+
+    #footer-summery{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content:center;
+    }
+
+    footer{
+        padding: 2vw 1vw;
+    }
+
+    #footer-summery section{
+        width: 30vw;
+        margin: 00 2vw
+   }
+
+}
+
+/*
+@media only screen and (min-width: 900px) {
+
+    #about-text p, .main-text {
+        font-size: 1.25rem;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+
+    #about-text p, .main-text {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    #about-text p, .main-text {
+        font-size: 1.55rem;
+    }
+} */
+
+/* 375 */
+/* 768 ipad */
+/* 980px - desktop */
+.underscore {
+    text-decoration: underline;
+}
