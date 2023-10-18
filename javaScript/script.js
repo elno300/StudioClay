@@ -16,21 +16,39 @@ function hamburgerToCross(x) {
 
         click = false;
     }
-    else if (click == false) {
+
+    else if (!click) {
         // hamburgerMenu.style.animationPlayState = "running";
-        hamburgerMenu.style.animation = "slide-back 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000)forwards";
+        hamburgerMenu.style.animation = "slide-back 0.7s cubic-bezier(0.645, 0.045, 0.355, 1.000) forwards";
         hamburgerButton.style.position = "relative";
 
         click = true;
     }
-
 }
 
+// function reload(){
+//   window.location.reload();
+// }
+let navbar = document.querySelector('.top-navigation')
+let lastScrollTop = 0
 
-function reload(){
-  window.location.reload();
+window.onscroll = () =>{
+  //
+  let currentScrollPos = window.scrollY
+
+    if(currentScrollPos > lastScrollTop + 3){
+     navbar.style.top = "-10vh"
+
+    }
+    else if(currentScrollPos===0){
+      navbar.style.top = "0"
+    }
+    else if(currentScrollPos<lastScrollTop - 3){
+      navbar.style.top = "0"
+    }
+
+    lastScrollTop = currentScrollPos
 }
-
 
 
 // Swiper slider
@@ -66,7 +84,7 @@ const swiper = new Swiper(".swiper", {
     },
 
     // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
+    // scrollbar: {
+    //   el: ".swiper-scrollbar",
+    // },
   });

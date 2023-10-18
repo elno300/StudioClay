@@ -38,6 +38,7 @@ p {
 nav{
     position: fixed;
     width: 100vw;
+    transition: 0.5s ease-in; /*Makes the navbar slide in and out on scroll*/
 }
 
 /* class selector */
@@ -47,17 +48,8 @@ nav{
     align-items: center;
     height: 10vh;
     z-index: 2;
-    /* display: none; */
-    /* position: fixed; */
+   
 }
-
-/* .SpaceNavTop{
-    background-color: aqua;
-    height: 10vh;
-    width: 100vw;
-    z-index: 2;
-    display: flex;
-} */
 
 /* LOGO -> CLAY STUDIO */
 .top-navigation h1 {
@@ -88,8 +80,6 @@ nav{
     position: relative;
     z-index: 3;
 }
-
-
 
 .line1, .line2{
     width: 32px;
@@ -541,7 +531,7 @@ footer{
         width: 47.5%;
     }
 
-           /* ========================================================== */
+    /* ========================================================== */
     /* ==================== courses section ===================== */
     /* ========================min w-980px======================= */
 
@@ -656,6 +646,13 @@ footer{
 /* 375 */
 /* 768 ipad */
 /* 980px - desktop */
+
+@media only screen and (min-width: 1200px){
+
+
+
+}
+
 .underscore {
     text-decoration: underline;
 }
