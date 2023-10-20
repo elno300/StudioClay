@@ -2,20 +2,19 @@
     width: 90vw;
     /* max-width: 1100px; */
     height: fit-content;
-    margin: 0;
+    /* max-width: 1000px; */
+    /* margin: auto; */
     background-color: #F6CDFA;
     z-index: 0;
-}
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+} */
 
 .swiper-slide {
     /* font-size: 18px; */
     display: flex;
-
-    /* justify-content: center; */
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    /* align-items: flex-start; */
-    text-align: start;
+    flex-direction: column-reverse;/*places the text under img*/
     background-color: #F6CDFA;
     margin: 0;
     padding-bottom: 2rem;
@@ -30,7 +29,7 @@
     padding: 4px 10px;
     border: none;
     cursor: pointer;
-    text-align:end;
+    /* text-align: end; */
     border-radius: 15px;
     /* margin-left: 5vw; */
 }

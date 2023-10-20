@@ -29,20 +29,23 @@ function hamburgerToCross(x) {
 // function reload(){
 //   window.location.reload();
 // }
+
+// Display/ undisplay navigation bar on scroll
 let navbar = document.querySelector('.top-navigation')
 let lastScrollTop = 0
 
 window.onscroll = () =>{
-  //
+
   let currentScrollPos = window.scrollY
 
     if(currentScrollPos > lastScrollTop + 3){
-     navbar.style.top = "-10vh"
-
+     navbar.style.top = "-12vh"
     }
+
     else if(currentScrollPos===0){
       navbar.style.top = "0"
     }
+
     else if(currentScrollPos<lastScrollTop - 3){
       navbar.style.top = "0"
     }
@@ -55,11 +58,12 @@ window.onscroll = () =>{
 // I have copied everything below!
 // https://swiperjs.com/get-started#swiper-css-stylessize
 
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper",{
     // Optional parameters
     direction: "horizontal",
     loop: true,
     slidesPerView: 1,
+    // centeredSlides: true,
 
     breakpoints: {
         768: {
