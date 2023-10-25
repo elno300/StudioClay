@@ -504,19 +504,34 @@ footer{
     /* section */
 
     #about-us {
+        background-color: violet;
         /* flex-direction: row; */
-        padding: 5vw;
+        /* padding: 5vw; */
+        padding-bottom: 10vh;
         height: fit-content;
+        margin: 0;
+
+    }
+
+    #about-text {
+        /* font-size: 0.75rem; */
+        /* width: 47.5%; */
+        max-width: 50vw;
     }
 
     #about-container{
+        background-color: burlywood;
+        padding: 0 5vw;
         flex-direction: row;
+        gap: 4vw;
     }
+
+
 
     #about-us p {
         /* background-color: #ab827e; */
         padding: 00 0vw;
-        justify-self: center;
+        /* justify-self: center; */
 
         /* font-size: large; */
     }
@@ -525,23 +540,15 @@ footer{
         display: block;
     }
 
-
-     /* #about-img-container {
-        display: inline-block;
-    }  */
-
     /* image */
     .aboutUs-img {
         border-radius: 50%;
         width: 47.5vw;
-        margin-left: 16px;
+        /* margin-left: 16px; */
         margin-bottom: 0;
     }
 
-    #about-text {
-        /* font-size: 0.75rem; */
-        width: 47.5%;
-    }
+
 
     /* ========================================================== */
     /* ==================== courses section ===================== */
@@ -559,7 +566,7 @@ footer{
 
     #courses .main-text{
         align-self: center;
-        max-width: 700px;
+        /* max-width: 700px; */
     }
 
     #courses>p{
@@ -580,19 +587,15 @@ footer{
         align-content: center;
     }
 
-
     #find-container{
+        background-color: rgb(244, 155, 92);
         flex-direction: row;
-        max-width: 1000px;
+        max-width: 1000px; /*OBS*/
         /* justify-content:flex-start; */
     }
 
-    /* #location-text{
-        width: 50vw;
-    } */
-
     #find-us p {
-        /* background-color: #ab827e; */
+        background-color: #ab827e;
         padding: 00 0vw;
         justify-self: center;
         padding-right: 2vw;
@@ -606,19 +609,6 @@ footer{
         padding-left: 0vw;
         margin-left: 2vw;
     }
-
-    /* #location-text address{
-        font-size: 50px;
-    } */
-
-    /* #map-container{
-        width: auto;
-        height: 45vw;
-        margin: 20px;
-        align-self: center;
-        justify-self: center;
-    } */
-
 
 
 
@@ -643,7 +633,6 @@ footer{
         width: 30vw;
         margin: 00 2vw
    }
-
 }
 
 /*
