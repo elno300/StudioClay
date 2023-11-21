@@ -607,7 +607,7 @@ footer{
         border-radius: 50%;
         padding-bottom: 0vh;
         padding-left: 0vw;
-        margin-left: 2vw;
+        /* margin-left: 2vw; */
     }
 
 
@@ -626,7 +626,7 @@ footer{
     }
 
     footer{
-        padding: 2vw 1vw;
+        padding: 2vw 5vw;
     }
 
     #footer-summery section{
