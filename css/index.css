@@ -562,9 +562,8 @@ footer{
     }
 
     #find-container{
-        background-color: rgb(244, 155, 92);
         flex-direction: row;
-        max-width: 1000px; /*OBS*/
+        max-width: 1000px;
         gap: 4vw;
         padding: 0 5vw;
     }
@@ -575,7 +574,6 @@ footer{
 
     #find-us p {
         padding: 00 0vw;
-        /* justify-self: center; */
     }
 
     #map-container{
