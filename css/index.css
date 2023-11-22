@@ -631,22 +631,8 @@ footer{
     #about-text p, .main-text {
         font-size: 1.35rem;
     }
-    /* p{
-        font-size: 1.5rem;
-    } */
+
 }
-
-/* 375 */
-/* 768 ipad */
-/* 980px - desktop */
-
-/* @media only screen and (min-width: 1200px){
-
-.swiper{
-    justify-content: center;
-}
-
-} */
 
 .underscore {
     text-decoration: underline;
