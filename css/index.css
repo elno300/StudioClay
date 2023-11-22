@@ -295,19 +295,19 @@ nav{
 }
 
 #map-container{
+    background-color: #E86252;
     width: 90vw;
+    height: 90vw;
     max-width: 400px;
     margin-bottom: 5vw;
     overflow: hidden;
-}
-
-#map-container picture{
-    filter: grayscale(0.8);
-    cursor: pointer;
-    overflow: hidden;
+    max-height: 400px;
+    padding: 0;
 }
 
 #map-container img {
+    background-color: #122151;
+    filter: grayscale(0.8);
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -419,15 +419,11 @@ footer{
     #courses{
         min-height: min-content;
         display: flex;
-        /* flex-direction: column;
-        justify-content: center; */
-
     }
 
     #courses .main-text{
         align-self: center;
     }
-
 
 }
 
@@ -497,36 +493,25 @@ footer{
     /* section */
 
     #about-us {
-        background-color: violet;
-        /* flex-direction: row; */
-        /* padding: 5vw; */
         padding-bottom: 10vh;
         height: fit-content;
         margin: 0;
 
     }
 
-    #about-text {
-        /* font-size: 0.75rem; */
-        /* width: 47.5%; */
-        max-width: 50vw;
-    }
-
     #about-container{
-        background-color: burlywood;
-        padding: 0 5vw;
         flex-direction: row;
         gap: 4vw;
+        padding: 0 5vw;
+        max-width: 1000px;
     }
 
-
+    #about-text {
+        max-width: 50%;
+    }
 
     #about-us p {
-        /* background-color: #ab827e; */
         padding: 00 0vw;
-        /* justify-self: center; */
-
-        /* font-size: large; */
     }
 
     #about-text p+p {
@@ -537,7 +522,6 @@ footer{
     .aboutUs-img {
         border-radius: 50%;
         width: 47.5vw;
-        /* margin-left: 16px; */
         margin-bottom: 0;
     }
 
@@ -554,12 +538,10 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: center; */
     }
 
     #courses .main-text{
         align-self: center;
-        /* max-width: 700px; */
     }
 
     #courses>p{
@@ -577,34 +559,34 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        align-content: center;
     }
 
     #find-container{
-        /* background-color: rgb(244, 155, 92); */
+        background-color: rgb(244, 155, 92);
         flex-direction: row;
         max-width: 1000px; /*OBS*/
-        /* justify-content:flex-start; */
+        gap: 4vw;
+        padding: 0 5vw;
+    }
+
+    #location-text{
+        max-width: 50%;
     }
 
     #find-us p {
-        background-color: #ab827e;
         padding: 00 0vw;
-        justify-self: center;
-        padding-right: 2vw;
-        /* align-items: start;
-        /* font-size: large; */
+        /* justify-self: center; */
     }
 
     #map-container{
-        background-color: #E86252;
         border-radius: 50%;
         padding-bottom: 0vh;
         padding-left: 0vw;
-        /* margin-left: 2vw; */
     }
 
-
+    #map-container img{
+        border-radius: 50%;
+    }
 
 
     /* ========================================================== */
