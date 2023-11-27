@@ -2,9 +2,11 @@ let click = true;
 var hamburgerMenu = document.getElementById("hamburger-menu");
 var hamburgerButton = document.getElementById("hamburger-button");
 
-function hamburgerToCross(x) {
+function hamburgerToCross() {
     //The hamburgerToCross function toggle the appearance of the hamburger menu icon into a cross or "X" icon when it's called = clicked (and if the click is true).
-    x.classList.toggle("rotate");
+
+
+    hamburgerButton.classList.toggle("rotate");
 
     // If click is true an animation is running revealing a slide-in menu
     if (click) {
