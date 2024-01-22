@@ -17,7 +17,7 @@ p,
 a,
 .book-button {
     color: #122151;
-    font-family: Josefin, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: avenirNext, sans-serif, Josefin, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-style: normal;
     font-weight: 400;
     text-decoration: none;
@@ -40,7 +40,7 @@ p {
     padding: 00 5vw;
     font-size: 1rem;
 }
-
+avenirNextDemi
 nav{
     position: fixed;
     width: 100%;
@@ -374,7 +374,29 @@ footer{
     font-style:normal;
 }
 
+/* @font-face {
+    font-family: avenirNext;
+    src: url(../avenir-next/AvenirNextCyr-Light.ttf);
+    font-weight: 400;
+} */
 
+/* @font-face {
+    font-family: avenirNext;
+    src: url(../avenir-next/AvenirNextCyr-Thin.ttf);
+    font-weight: 300;
+} */
+
+@font-face {
+    font-family: avenirNext;
+    src: url(../avenir-next/AvenirNextCyr-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: avenirNextDemi;
+    src: url(../avenir-next/AvenirNextCyr-Demi.ttf);
+    font-weight: 900;
+}
 
 
 /* ========================================================== */

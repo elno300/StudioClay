@@ -1,24 +1,21 @@
 .swiper {
     width: 90vw;
-    /* max-width: 1100px; */
+
     height: fit-content;
-    /* max-width: 1000px; */
-    /* margin: auto; */
     background-color: #F6CDFA;
     z-index: 0;
-    /* display: flex;
-    justify-content: center;
-    align-content: center;
-} */
+    display: flex;
+    flex-direction: column-reverse;/*places the text under img*/
+    margin: 0;
+    padding-bottom: 2rem;}
 
 .swiper-slide {
-    /* font-size: 18px; */
+    /* font-size: 12px; */
     display: flex;
     flex-direction: column-reverse;/*places the text under img*/
     background-color: #F6CDFA;
     margin: 0;
     padding-bottom: 2rem;
-
 }
 
 .swiper-slide .book-button{
@@ -62,8 +59,16 @@
     display: none;
 }
 
+strong{
+   /* font-family: avenirNextDemi, */
+   font-weight: 100;
+font-family: avenir;
+
+}
+
 .swiper-slide p{
     padding:0;
+    font-size: smaller;
 }
 
 .swiper {
@@ -73,6 +78,7 @@
     margin-left: 0vw;
 
 }
+
 
 /* @media only screen and( min-width: 768px) {
 
