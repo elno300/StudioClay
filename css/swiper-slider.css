@@ -60,10 +60,8 @@
 }
 
 strong{
-   /* font-family: avenirNextDemi, */
-   font-weight: 100;
-font-family: avenir;
-
+    font-weight: 100;
+    font-family: avenirNextDemi;
 }
 
 .swiper-slide p{

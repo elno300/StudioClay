@@ -40,7 +40,7 @@ p {
     padding: 00 5vw;
     font-size: 1rem;
 }
-avenirNextDemi
+
 nav{
     position: fixed;
     width: 100%;
@@ -229,6 +229,10 @@ nav{
     display: none;
 }
 
+/* #about-text p{
+    text-align: justify;
+} */
+
 #about-us h2 {
     margin-bottom: 0;
 }
@@ -332,12 +336,16 @@ footer{
 }
 
 #footer-summery p{
-    padding: 0
+    padding: 0;
+    /* text-align: justify; */
+    /* font-size: small; */
+    font-size: medium;
 }
 
 #copyrights{
     padding-top: 5vh;
     text-align: center;
+    /* font-size: smaller; */
    }
 
 
@@ -375,13 +383,13 @@ footer{
 }
 
 /* @font-face {
-    font-family: avenirNext;
+    font-family: avenirNextLight;
     src: url(../avenir-next/AvenirNextCyr-Light.ttf);
     font-weight: 400;
 } */
 
 /* @font-face {
-    font-family: avenirNext;
+    font-family: avenirNextThin;
     src: url(../avenir-next/AvenirNextCyr-Thin.ttf);
     font-weight: 300;
 } */
@@ -650,7 +658,8 @@ footer{
 @media only screen and (min-width: 1200px) {
 
     #about-text p, .main-text {
-        font-size: 1.35rem;
+        font-size: 1.15rem;
+        /* font-size: medium; */
     }
 
 }
