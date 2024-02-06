@@ -504,7 +504,7 @@ footer{
     /* The menu that slides out when clicking the hamburger */
     .hamburger-menu {
         width: fit-content;
-        padding: 00 10vw;
+        width: 300px;
     }
 
     #hamburger-menu ul a:hover{
@@ -518,8 +518,6 @@ footer{
     /* ========================================================== */
     /* ========================= About ========================== */
     /* ===========================980px========================== */
-
-    /* section */
 
     #about-us {
         padding-bottom: 10vh;
